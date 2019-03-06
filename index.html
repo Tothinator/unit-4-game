@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Star Wars Game</title>
+    <link rel="stylesheet" href="assets/css/reset.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="assets/javascript/game.js"></script>
+</head>
+<body>
+    <div class="container">
+        <div class="main-content">
+            <div class="row" id="starting-character-container">
+                <!-- Use Javascript to Dynamically add the columns of the available characters to play -->
+            </div>
+            <div class="row">
+                <div class="col-12 container-title">
+                    <h2>Your Character</h2>
+                </div>
+            </div>
+            <div class="row" id="player-character">
+                <!-- Need to add styling here to make the space from the character box default (make it a fixed height of the character boxes)  -->
+                <!-- Detach the clicked character from the starting-character-container and place it here, change the color to green -->
+            </div>
+            <div class="row">
+                <div class="col-12 container-title">
+                    <h2>Enemies Available To Attack</h2>
+                </div>
+            </div>
+            <div class="row" id="selectable-enemies">
+                <!-- Detach the non-clicked characters from the starting-character-container and place them here, change color to red -->
+            </div>
+            <div class="row">
+                <div class="col-12 container-title">
+                    <h2>Fight Section</h2>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-3">
+                    <button class="btn btn-primary" id="attack-button">ATTACK!</button>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12 container-title">
+                    <h2>Defender</h2>
+                </div>
+            </div>
+            <div class="row" id="current-enemy">
+                <!-- Detach the clicked character from selectable-enemies and place them here change styling to background black and text white -->
+            </div>
+            <div class="row">
+                <div class="col-6" id="damage-output">
+                    <!-- Put in damage paragraphs -->
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
