@@ -2,6 +2,55 @@ html {
     min-height: 100%;
 }
 
+body {
+    background-image: url("../images/background.jpg");
+    background-size: cover;
+}
+
 body, wrapper {
     min-height: 100vh;
 }
+
+img {
+    padding: 0 5px;
+}
+
+#page-title {
+    padding: 0 10px;
+}
+
+.container-title, #damage-output {
+    color: white;
+}
+
+.character-container {
+    background-color: #ffffff;
+    border-style: inset;
+    border-width: 3px;
+    border-color: green;
+    margin: 10px;
+}
+
+.enemies {
+    background-color: red;
+    border-color: black;
+}
+
+#defender {
+    background-color: black;
+    color: white;
+}
+
+.hidden {
+    visibility: hidden;
+}
+
+.col-md-3.character-container {
+    padding: 0;
+}
+
+.character-container > p {
+    margin: 0;
+    padding: 5px 0 5px 0;
+}
+
